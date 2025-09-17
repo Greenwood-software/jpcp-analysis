@@ -3,7 +3,7 @@ Jointed Plain Concrete Pavement Analysis from TSD data
 
 #### Author(s): David Malmgren-Hansen 
 
-## DATA: T7202003030009.tsd.sup_reduced.txt
+## DATA: example_data.csv
 PLEASE SEE NOTICE ABOUT THIS DATA
 
 The File contains TSD measurements conducted by Greenwood Engineering A/S in 2020, in nothern Germany. It is part of a study that was published:
