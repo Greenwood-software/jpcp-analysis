@@ -66,9 +66,6 @@ dvel_inds = df.columns[np.array(lst)]
 df['dV'] = (df[dvel_inds[6]] - df[dvel_inds[7]]) * 1e-3
 
 # This is my quick and dirty integration of delta-V (speed) to get delta-W (deflection)
-# df['sum_ind'] = (df[x_column].values // dX).astype(int)
-# dfm = df.groupby('sum_ind').mean(numeric_only=True).reset_index(drop=True)
-
 res = df.iloc[1,0] - df.iloc[0,0]
 df['dV'] = df['dV'].rolling(round(dX/res), center=True).mean()
 dfm = df
